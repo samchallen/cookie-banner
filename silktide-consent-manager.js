@@ -251,11 +251,26 @@
 
   window.silktideCookieBannerManager = {
     updateCookieBannerConfig: function (config) {
-      if (!document.body) {
-        document.addEventListener("DOMContentLoaded", () => new SilktideCookieBanner(config));
-      } else {
-        new SilktideCookieBanner(config);
+      function init() {
+        if (!document.querySelector("#silktide-wrapper")) {
+          new SilktideCookieBanner(config);
+        }
       }
+
+      if (document.readyState === "complete" || document.readyState === "interactive") {
+        init();
+      } else {
+        document.addEventListener("DOMContentLoaded", init);
+      }
+
+      // Observe DOM for Wix language switches
+      const observer = new MutationObserver(() => {
+        if (!document.querySelector("#silktide-wrapper")) {
+          init();
+        }
+      });
+
+      observer.observe(document.body, { childList: true, subtree: true });
     }
   };
 })();
