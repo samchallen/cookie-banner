@@ -197,7 +197,7 @@
       return `
         <header>
           <h1>${t.title || "Customize your cookie preferences"}</h1>
-          <button class="modal-close">Ã—</button>
+          <button class="modal-close">×</button>
         </header>
         ${t.description || ""}
         <section id="cookie-preferences">${cookieHTML}</section>
