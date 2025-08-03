@@ -1,1 +1,4 @@
-/* Placeholder for silktide-consent-manager.css - replace with real CSS file */
+/* Minimal cookie banner styles */
+#cookie-banner-wrapper * {
+  box-sizing: border-box;
+}
