@@ -13,12 +13,12 @@
               --focus: 0 0 0 2px #ffffff, 0 0 0 4px #000000, 0 0 0 6px #ffffff;
               --boxShadow: -5px 5px 10px 0px #00000012, 0px 0px 50px 0px #0000001a;
               --fontFamily: Helvetica Neue, Segoe UI, Arial, sans-serif;
-              --primaryColor: #ED1C24;
+              --primaryColor: #FF2600;
               --backgroundColor: #ffffff;
-              --textColor: #000000;
-              --backdropBackgroundColor: #00000080;
-              --backdropBackgroundBlur: 5px;
-              --cookieIconColor: #000000;
+              --textColor: #4b494b;
+              --backdropBackgroundColor: #00000033;
+              --backdropBackgroundBlur: 0px;
+              --cookieIconColor: #4B494B;
               --cookieIconBackgroundColor: #FFFFFF;
               position: fixed;
   bottom: 0;
